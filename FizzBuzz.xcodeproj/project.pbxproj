@@ -12,12 +12,13 @@
 		160B57BD1C441FED0030919F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160B57BB1C441FED0030919F /* Main.storyboard */; };
 		160B57BF1C441FED0030919F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160B57BE1C441FED0030919F /* Assets.xcassets */; };
 		160B57C21C441FED0030919F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160B57C01C441FED0030919F /* LaunchScreen.storyboard */; };
-		160B57D81C441FED0030919F /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160B57D71C441FED0030919F /* FizzBuzzUITests.swift */; };
 		160B57E61C44212F0030919F /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160B57E51C44212F0030919F /* BrainTests.swift */; };
 		160B57E81C4424F30030919F /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160B57E71C4424F30030919F /* Brain.swift */; };
+		1622EDCD1C46D7FC0033C527 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1622EDCC1C46D7FC0033C527 /* Move.swift */; };
 		1662675D1C44495400A3366E /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662675C1C44495400A3366E /* GameTests.swift */; };
 		1662675F1C444ACC00A3366E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662675E1C444ACC00A3366E /* Game.swift */; };
 		16E80C081C449454005108FC /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E80C071C449454005108FC /* ViewControllerUnitTests.swift */; };
+		16EFF3C51C4573E700B3C446 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFF3C41C4573E700B3C446 /* ViewControllerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +49,14 @@
 		160B57C81C441FED0030919F /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		160B57CE1C441FED0030919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160B57D31C441FED0030919F /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		160B57D71C441FED0030919F /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		160B57D91C441FED0030919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160B57E51C44212F0030919F /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		160B57E71C4424F30030919F /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		1622EDCC1C46D7FC0033C527 /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		1662675C1C44495400A3366E /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		1662675E1C444ACC00A3366E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		16E80C071C449454005108FC /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		16EFF3C41C4573E700B3C446 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				160B57C31C441FED0030919F /* Info.plist */,
 				160B57E71C4424F30030919F /* Brain.swift */,
 				1662675E1C444ACC00A3366E /* Game.swift */,
+				1622EDCC1C46D7FC0033C527 /* Move.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -131,8 +134,8 @@
 		160B57D61C441FED0030919F /* FizzBuzzUITests */ = {
 			isa = PBXGroup;
 			children = (
-				160B57D71C441FED0030919F /* FizzBuzzUITests.swift */,
 				160B57D91C441FED0030919F /* Info.plist */,
+				16EFF3C41C4573E700B3C446 /* ViewControllerUITests.swift */,
 			);
 			path = FizzBuzzUITests;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1622EDCD1C46D7FC0033C527 /* Move.swift in Sources */,
 				160B57BA1C441FED0030919F /* ViewController.swift in Sources */,
 				160B57E81C4424F30030919F /* Brain.swift in Sources */,
 				160B57B81C441FED0030919F /* AppDelegate.swift in Sources */,
@@ -292,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160B57D81C441FED0030919F /* FizzBuzzUITests.swift in Sources */,
+				16EFF3C51C4573E700B3C446 /* ViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,10 +470,12 @@
 		160B57E31C441FED0030919F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FizzBuzzUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderPerson.FizzBuzzUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = FizzBuzz;
 				USES_XCTRUNNER = YES;
 			};
@@ -478,6 +484,7 @@
 		160B57E41C441FED0030919F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FizzBuzzUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderPerson.FizzBuzzUITests;

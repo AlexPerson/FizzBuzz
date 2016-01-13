@@ -36,30 +36,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzp-eB-xNW">
                                 <rect key="frame" x="60" y="60" width="480" height="480"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-Sf-TQr">
-                                        <rect key="frame" x="0.0" y="0.0" width="230.5" height="230.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
-                                        <state key="normal" title="0" backgroundImage="button_border">
-                                            <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcH-HJ-B6y">
-                                        <rect key="frame" x="249.5" y="249.5" width="230.5" height="230.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcH-HJ-B6y">
+                                        <rect key="frame" x="250" y="250" width="230" height="230"/>
                                         <state key="normal" image="space" backgroundImage="button_border">
                                             <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9C-xz-tS7">
-                                        <rect key="frame" x="0.0" y="249" width="230.5" height="230.5"/>
+                                        <rect key="frame" x="0.0" y="249" width="231" height="231"/>
                                         <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC7-An-NLD">
-                                        <rect key="frame" x="249" y="0.0" width="230.5" height="230.5"/>
+                                        <rect key="frame" x="249" y="0.0" width="231" height="231"/>
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-Sf-TQr">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="231"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsB-FU-RJR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -103,6 +107,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="numberButton" destination="MY1-Sf-TQr" id="fY2-JJ-lvB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
