@@ -68,6 +68,8 @@ class ViewController: UIViewController {
             play(Move.Fizz)
         } else if sender == buzzButton {
             play(Move.Buzz)
+        } else {
+            play(Move.FizzBuzz)
         }
     }
 }
