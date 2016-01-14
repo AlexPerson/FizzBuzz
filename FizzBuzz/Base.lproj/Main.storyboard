@@ -44,15 +44,25 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9C-xz-tS7">
                                         <rect key="frame" x="0.0" y="249" width="231" height="231"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgf-KC-zJC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC7-An-NLD">
                                         <rect key="frame" x="249" y="0.0" width="231" height="231"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKV-Uo-feU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-Sf-TQr">
                                         <rect key="frame" x="0.0" y="0.0" width="231" height="231"/>
@@ -108,6 +118,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="buzzButton" destination="h9C-xz-tS7" id="Pb7-Gm-XZA"/>
+                        <outlet property="fizzButton" destination="rC7-An-NLD" id="o0u-qU-yU8"/>
                         <outlet property="numberButton" destination="MY1-Sf-TQr" id="fY2-JJ-lvB"/>
                     </connections>
                 </viewController>
